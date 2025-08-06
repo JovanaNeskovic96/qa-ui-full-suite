@@ -1,0 +1,46 @@
+# Combined Bug Reports
+
+---
+
+## BUG_006 – Search accepts special characters but crashes page
+- **Module:** Search Bar
+- **Severity:** High
+- **Steps:** Enter "@@@@" in search → Press Enter
+- **Result:** Blank white screen (uncaught error)
+- **Expected:** Graceful "no results" message or input sanitization
+
+---
+
+## BUG_007 – Expired password reset link still redirects to password form
+- **Module:** Password Reset
+- **Severity:** Medium
+- **Steps:** Open expired link from email
+- **Result:** Password form is shown, but fails silently on submit
+- **Expected:** Clear error: "Reset link expired"
+
+---
+
+## BUG_008 – Cart total doesn't update after quantity change
+- **Module:** Shopping Cart
+- **Severity:** High
+- **Steps:** Increase quantity to 3
+- **Result:** Subtotal updates, total stays the same
+- **Expected:** Total reflects updated quantities
+
+---
+
+## BUG_009 – UI breaks at 320px width
+- **Module:** Responsive Design
+- **Severity:** Medium
+- **Steps:** Open site on very small screen
+- **Result:** Text overflows, elements overlap
+- **Expected:** Responsive layout adapts properly
+
+---
+
+## BUG_010 – Profile email change does not persist
+- **Module:** Profile Settings
+- **Severity:** Major
+- **Steps:** Enter new email and save → Refresh page
+- **Result:** Old email still shown
+- **Expected:** Updated email should persist
